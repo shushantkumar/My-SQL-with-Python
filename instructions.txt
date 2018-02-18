@@ -1,0 +1,21 @@
+SHOW DATABASES;		//shows all databases
+SHOW PROCESSLIST; 	//shows all the processes running
+USE databasename;	//enters that database
+CREATE TABLE tablename (arguements);
+CREATE TABLE tablename (time int(13),username varchar(20), tweet varchar(140));
+SHOW TABLES; 			//shows all the table in that database
+DESCRIBE tablename;		//description of table
+DESC tablename;		//description of table
+INSERT INTO tablename VALUES (1223456,"jhdslf","gkfjldsjfigdhdoOSKD");		//insert into table
+SELECT * from tablename;		//gives all things stored in database
+SELECT SPECIFIC_COLUMN from tablename;		//for specific details of a column
+UPDATE tablename SET fieldname="something" WHERE fieldname="someanother thing";					//updates where the condition true
+UPDATE tablename SET fieldname="something" WHERE fieldname="someanother thing" LIMIT number;	//updates upto that limit only
+DELETE from tablename where fieldname="something" LIMIT 1;			//delete it with the limit
+// values are not case sensitive
+SELELCT * from tablename where where somecondition(it can include > or <) (AND OR is supported) ;	//to select some specific row with conditions
+DELETE from tablename where where somecondition(it can include > or <) (AND OR is supported) ;		//delete with some conditions
+// So always check first and then delete
+
+
+# for python basically every instructions of mysql u write under .execute("here")
